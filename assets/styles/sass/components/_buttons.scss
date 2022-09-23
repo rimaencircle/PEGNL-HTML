@@ -1,0 +1,185 @@
+.btn{
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    font-family: $global-font;
+    letter-spacing: 0.1em;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+    @include transition__500;
+    &:hover{
+
+        span{
+            transform: translateX(3px);
+           
+        }
+    }
+    span{
+        margin-left: 5px;
+        display: inline-block;
+        @include transition__500;
+    }
+    &.btn-lg{
+        min-width: 152px;
+        height: 40px;
+        padding: 12px 15px;
+        position: relative;
+        z-index: 1;
+        @include transition__500;
+        &::before{
+            content: '';
+            position: absolute;
+            left: -58px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: $primary;
+            top: -15px;
+            bottom: 0;
+            @include transition__500;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        &:hover{
+            color: $white;
+            &::before{
+                width: 100%;
+                height: 100%;
+                border-radius: 0px;
+                opacity: 1;
+                left: 0;
+                top: 0;
+            }
+        }
+        &.btn-block{
+            width: 100%;
+        }
+    }
+    &.btn-sm{
+        min-width: 91px;
+        height: 27px;
+        padding: 8px 10px;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        @include transition__500;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: -30px;
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            background-color: $primary;
+            top: -15px;
+            bottom: 0;
+            @include transition__500;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        &:hover{
+            color: $white;
+            &::before{
+                width: 100%;
+                height: 100%;
+                border-radius: 0px;
+                opacity: 1;
+                left: 0;
+                top: 0;
+            }
+        }
+        &.btn-block{
+            width: 100%;
+        }
+    }
+    &.btn-grey{
+        background-color:$silver;
+        color: $primary;
+
+        &:hover{
+            background-color: $primary;
+            color: $white;
+
+            span{
+
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.btn-blue{
+        background-color:$primary;
+        color: $white;
+
+        &::before{
+            background-color: $silver;
+        }
+        &:hover{
+            background-color: $silver;
+            color: $primary;
+
+            span{
+
+                svg{
+                    path{
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+    }
+    &.btn-secondary{
+        background-color:$secondary;
+        color: $white;
+        border: 1px solid $secondary;
+
+        &::before{
+            background-color: $silver;
+        }
+        &:hover{
+            background-color: $silver;
+            color: $secondary;
+
+            span{
+
+                svg{
+                    path{
+                        fill: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    &.btn-outline{
+        background-color: $white;
+        border: 1px solid $primary;
+        color: $primary;
+
+        &:hover{
+            background-color: $primary;
+            color: $white;
+
+            span{
+
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}

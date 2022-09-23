@@ -1,0 +1,209 @@
+.pn-slider-section{
+    .homeSwiper{
+        position: relative;
+        height: 100vh;
+        min-height: 740px;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            width: 766px;
+            height: 766px;
+            bottom: 40px;
+            left: -30%;
+            top: -44px;
+            background-image: url('../images/half-circle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 9;
+            border-radius: 50%;
+            opacity: 0.2;
+            animation: infinite-spinning 8s infinite linear;
+
+            @media #{$large} {
+                left: -34%;
+            }
+            @media #{$tablet} {
+                left: -39%;
+            }
+            @media #{$small} {
+                height: 564px;
+                width: 564px;
+            }
+            @keyframes infinite-spinning {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+
+              @media #{$extra} {
+                width: 856px;
+                height: 856px;
+                left: -22%;
+                top: -44px;
+              }
+        }
+        .circle{
+            position: absolute;
+            width: 766px;
+            height: 766px;
+            top: 0;
+            bottom: 40px;
+            left: -20%;
+            z-index: 9;
+            svg{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                g{
+                    path{
+                          transform-box: fill-box;
+                         transform-origin: 50% 50%;
+                    }
+                }
+            }
+        }
+        .swiper-wrapper{
+            .swiper-slide{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // padding:20px 30px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(180deg, #107DA0 0%, rgba(16, 125, 160, 0) 100%);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .banner-content{
+                    position: absolute;
+                    max-width: 710px;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: $white;
+                    padding:0 70px;
+                    @media #{$extra} {
+                        max-width: 870px;
+                    }
+                    h1{
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 38px;
+                        color: $white;
+                        text-transform: lowercase;
+                        margin-bottom: 20px;
+                        font-family: $guest-font;
+
+                        @media #{$extra} {
+                            font-size: 40px;
+                            line-height: 48px; 
+                        }
+                        @media #{$xl} {
+                            font-size: 35px;
+                            line-height: 45px; 
+                        }
+                        @media #{$small} {
+                            font-size: 30px;
+                            line-height: 38px; 
+                        }
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-bottom: 35px;
+
+                        @media #{$extra} {
+                            font-size: 16px;
+                            line-height: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+            height: 49px;
+            width: 49px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            flex-direction: column;
+            span{
+                color: $white;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+            }
+            .slider-title{
+                position: absolute;
+                bottom: 0;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: initial;
+                display: block;
+                visibility: hidden;
+                @include transition;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom:0;
+                height: 100%;
+                width: 2px;
+                background-color: $white;
+                border-radius: 10px;
+            }
+
+            &:hover{
+                .slider-title{
+                    visibility: visible;
+                }
+            }
+        }
+        .swiper-button-next{
+            right: 50px;
+            @media #{$xl} {
+                right: 30px;
+            }
+            @media #{$md} {
+                right: 15px;
+            }
+            &::after{
+                right:0;
+            }
+            .slider-title{
+                right: 15px;
+            }
+        }
+        .swiper-button-prev{
+            left: 50px;
+            .slider-title{
+                left: 15px;
+            }
+            @media #{$xl} {
+                left: 30px;
+            }
+            @media #{$md} {
+                left: 15px;
+            }
+            &::after{
+                left:0;
+            }
+        }
+    }
+}

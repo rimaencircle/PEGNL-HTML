@@ -1,0 +1,961 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEGNL - News & Resources</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css"/>
+    <link rel="stylesheet" href="../assets/styles/main.css" /> 
+  </head> 
+  <body>
+  <div id="cursor">
+    <div class="cursor--inner"></div>
+  </div>
+  <header>
+    <div class="stiky-header">
+        <div class="p_header">
+            <div class="main-menu">
+              <div class="top-bar">
+                <div class="top-bar-left">
+                  <div class="p_logo">
+                    <a href="index.html">
+                      <img src="../assets/images/logo.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="logo-info">
+                      <img src="../assets/images/logo-info.svg" alt="">
+                  </div>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li><a href="javascript:;">
+                          <div class="image-wrapper">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_88_475)">
+                              <path d="M12.8769 12.2927L9.52051 8.98999C10.3994 8.03506 10.9395 6.77215 10.9395 5.38244C10.9391 2.40961 8.49042 0 5.46965 0C2.44888 0 0.000244141 2.40961 0.000244141 5.38244C0.000244141 8.35527 2.44888 10.7649 5.46965 10.7649C6.77483 10.7649 7.97192 10.3134 8.91222 9.56292L12.2816 12.8787C12.4458 13.0404 12.7123 13.0404 12.8765 12.8787C13.0411 12.717 13.0411 12.4545 12.8769 12.2927ZM5.46965 9.93676C2.91375 9.93676 0.841789 7.89773 0.841789 5.38244C0.841789 2.86715 2.91375 0.82812 5.46965 0.82812C8.02557 0.82812 10.0975 2.86715 10.0975 5.38244C10.0975 7.89773 8.02557 9.93676 5.46965 9.93676Z" fill="#007299"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_88_475">
+                              <rect width="13" height="13" fill="white"/>
+                              </clipPath>
+                              </defs>
+                              </svg>
+                          </div>
+                          <span>Search</span></a>
+                        </li>
+                        <li><a href="javascript:;">
+                          <div class="image-wrapper">
+                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 3.575H12.675V3.25C12.675 2.81902 12.5038 2.4057 12.199 2.10095C11.8943 1.7962 11.481 1.625 11.05 1.625H6.175C6.175 1.19402 6.0038 0.780698 5.69905 0.475951C5.3943 0.171205 4.98098 0 4.55 0H1.625C1.19402 0 0.780698 0.171205 0.475951 0.475951C0.171205 0.780698 0 1.19402 0 1.625V11.5375C0.000858509 11.9251 0.155218 12.2966 0.429305 12.5707C0.703391 12.8448 1.07488 12.9991 1.4625 13H13C13.431 13 13.8443 12.8288 14.149 12.524C14.4538 12.2193 14.625 11.806 14.625 11.375V5.2C14.625 4.76902 14.4538 4.3557 14.149 4.05095C13.8443 3.7462 13.431 3.575 13 3.575ZM2.275 11.5375C2.275 11.753 2.1894 11.9597 2.03702 12.112C1.88465 12.2644 1.67799 12.35 1.4625 12.35C1.24701 12.35 1.04035 12.2644 0.887976 12.112C0.735602 11.9597 0.65 11.753 0.65 11.5375V1.625C0.65 1.36641 0.752723 1.11842 0.935571 0.935571C1.11842 0.752723 1.36641 0.65 1.625 0.65H4.55C4.80859 0.65 5.05658 0.752723 5.23943 0.935571C5.42228 1.11842 5.525 1.36641 5.525 1.625H3.575C3.4888 1.625 3.40614 1.65924 3.34519 1.72019C3.28424 1.78114 3.25 1.8638 3.25 1.95C3.25 2.0362 3.28424 2.11886 3.34519 2.17981C3.40614 2.24076 3.4888 2.275 3.575 2.275H11.05C11.3086 2.275 11.5566 2.37772 11.7394 2.56057C11.9223 2.74342 12.025 2.99141 12.025 3.25V3.575H3.9C3.46902 3.575 3.0557 3.7462 2.75095 4.05095C2.4462 4.3557 2.275 4.76902 2.275 5.2V11.5375ZM13.975 11.375C13.975 11.6336 13.8723 11.8816 13.6894 12.0644C13.5066 12.2473 13.2586 12.35 13 12.35H2.678C2.83906 12.1096 2.92504 11.8268 2.925 11.5375V5.2C2.925 4.94141 3.02772 4.69342 3.21057 4.51057C3.39342 4.32772 3.64141 4.225 3.9 4.225H13C13.2586 4.225 13.5066 4.32772 13.6894 4.51057C13.8723 4.69342 13.975 4.94141 13.975 5.2V11.375Z" fill="#007299"/>
+                              </svg>
+                          </div>
+                          <span>Registry</span></a></li>
+                        <li><a href="javascript:;">
+                          <div class="image-wrapper">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11.2605 1.2381H9.90476V0.309524C9.90476 0.227433 9.87215 0.148704 9.81411 0.0906575C9.75606 0.0326105 9.67733 0 9.59524 0C9.51315 0 9.43442 0.0326105 9.37637 0.0906575C9.31833 0.148704 9.28572 0.227433 9.28572 0.309524V1.2381H3.71429V0.309524C3.71429 0.227433 3.68168 0.148704 3.62363 0.0906575C3.56558 0.0326105 3.48685 0 3.40476 0C3.32267 0 3.24394 0.0326105 3.1859 0.0906575C3.12785 0.148704 3.09524 0.227433 3.09524 0.309524V1.2381H1.73952C1.27817 1.2381 0.835719 1.42137 0.509495 1.74759C0.183271 2.07381 0 2.51627 0 2.97762V11.2605C0 11.7218 0.183271 12.1643 0.509495 12.4905C0.835719 12.8167 1.27817 13 1.73952 13H11.2605C11.7218 13 12.1643 12.8167 12.4905 12.4905C12.8167 12.1643 13 11.7218 13 11.2605V2.97762C13 2.51627 12.8167 2.07381 12.4905 1.74759C12.1643 1.42137 11.7218 1.2381 11.2605 1.2381ZM1.73952 1.85714H11.2605C11.5576 1.85714 11.8426 1.97519 12.0528 2.18532C12.2629 2.39545 12.381 2.68045 12.381 2.97762V3.71429H0.619048V2.97762C0.619048 2.68045 0.737098 2.39545 0.947228 2.18532C1.15736 1.97519 1.44236 1.85714 1.73952 1.85714ZM11.2605 12.381H1.73952C1.44236 12.381 1.15736 12.2629 0.947228 12.0528C0.737098 11.8426 0.619048 11.5576 0.619048 11.2605V4.33333H12.381V11.2605C12.381 11.5576 12.2629 11.8426 12.0528 12.0528C11.8426 12.2629 11.5576 12.381 11.2605 12.381Z" fill="#007299"/>
+                              </svg>
+                          </div>
+                        <span>events</span></a></li>
+                        <li><a href="javascript:;">
+                          <div class="image-wrapper">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.13605 5.90442C3.973 5.90348 3.84005 6.03487 3.83912 6.1979C3.83866 6.27721 3.87012 6.35338 3.92644 6.40924L6.28821 8.77101C6.40337 8.88549 6.58934 8.88549 6.70447 8.77101L9.06624 6.40924C9.19007 6.30319 9.20451 6.11682 9.09844 5.99299C8.99239 5.86915 8.80602 5.85472 8.68218 5.96079C8.67064 5.97069 8.65985 5.98144 8.64999 5.99299L6.79304 7.84994V0.295212C6.79304 0.132181 6.66086 0 6.4978 0C6.33474 0 6.20259 0.132181 6.20259 0.295212V7.84994L4.34564 5.99299C4.29041 5.93664 4.21493 5.90475 4.13605 5.90442Z" fill="#007299"/>
+                              <path d="M12.8583 5.19744C12.3358 2.65275 10.3472 0.664177 7.80251 0.141645H7.80545C7.65871 0.0705821 7.48213 0.131928 7.41107 0.278672C7.34 0.425415 7.40135 0.601994 7.54809 0.673057C7.58874 0.692745 7.63334 0.702842 7.6785 0.702563C10.8735 1.35474 12.9349 4.47354 12.2827 7.66859C11.6306 10.8636 8.51179 12.925 5.31675 12.2728C2.12171 11.6207 0.0603224 8.50186 0.712498 5.30681C1.18581 2.98802 2.99796 1.1759 5.31675 0.702563C5.47981 0.703527 5.61275 0.572108 5.61369 0.409076C5.61465 0.24602 5.48323 0.113078 5.3202 0.112139C5.27504 0.111885 5.23044 0.121983 5.1898 0.141645C1.6761 0.863133 -0.587465 4.29643 0.134024 7.81015C0.855512 11.3239 4.28881 13.5874 7.80251 12.8659C11.3162 12.1444 13.5798 8.71114 12.8583 5.19744Z" fill="#007299"/>
+                            </svg>
+                          </div>
+                        <span>login</span></a></li>
+
+                    </ul>
+                    <ul class="menu menu-dot">
+                      <li><a href="javascript:;" class="humburgur">
+                        <div class="image-wrapper">
+                          <svg width="27" height="6" viewBox="0 0 27 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3.11244" cy="2.96449" r="2.88539" fill="#007299"/>
+                            <circle cx="13.4997" cy="2.96449" r="2.88539" fill="#007299"/>
+                            <circle cx="23.8873" cy="2.96449" r="2.88539" fill="#007299"/>
+                            </svg>
+                        </div>
+                      <span>menu</span></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="p_header mega-menu">
+        <div class="top-header">
+          <div class="upper-menu">
+              <ul class="social-icon">
+                  <li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+              <ul class="menu">
+                  <li><a href="javascript:;">about</a></li>
+                  <li><a href="javascript:;">contact</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="main-menu">
+          <div class="title-bar" data-toggle="responsive-menu" data-hide-for="large">
+            <a href="index.html" class="title-bar-title"><img src="../assets/images/logo.svg" alt=""></a>
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          </div>
+          <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+              <div class="p_logo">
+                <a href="index.html">
+                  <img src="../assets/images/logo.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="top-bar-center">
+              <ul class="dropdown menu">
+                <li class="has-submenu">
+                  <a href="#0">Public</a>
+                  <ul class="dropdown-menu vertical">
+                    <h3>public</h3>
+                      <li><a href="#0">Fees Schedule</a></li>
+                      <li><a href="#0">Licensing & Registration</a></li>
+                      <li><a href="#0">Discipline & Enforcement</a></li>
+                      <li><a href="#0">Practice Standards & Guidelines</a></li>
+
+                      <li><a href="#0">Sponsored Programs</a></li>
+                      <li><a href="#0">Professional Development</a></li>
+                      <li><a href="#0">Act, Regulations & By-Laws</a></li>
+                      <li><a href="#0">Volunteers & Committees</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="#0">LICENCE HOLDERS & MEMBERS</a>
+                  <ul class="dropdown-menu vertical">
+                    <h3>LICENCE HOLDERS & MEMBERS</h3>
+                      <li><a href="#0">Fees Schedule</a></li>
+                      <li><a href="#0">Licensing & Registration</a></li>
+                      <li><a href="#0">Discipline & Enforcement</a></li>
+                      <li><a href="#0">Practice Standards & Guidelines</a></li>
+
+                      <li><a href="#0">Sponsored Programs</a></li>
+                      <li><a href="#0">Professional Development</a></li>
+                      <li><a href="#0">Act, Regulations & By-Laws</a></li>
+                      <li><a href="#0">Volunteers & Committees</a></li>
+
+                      <li><a href="#0">Registry</a></li>
+                      <li><a href="#0">Job Postings</a></li>
+                      <li><a href="#0">Illuminate Newsletter</a></li>
+                      <li><a href="#0">Notarius - Digital Authentication</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="#0">APPLICANTS</a>
+                  <ul class="dropdown-menu vertical">
+                    <h3>applicants</h3>
+
+                      <li><a href="#0">Registry</a></li>
+                      <li><a href="#0">Job Postings</a></li>
+                      <li><a href="#0">Illuminate Newsletter</a></li>
+                      <li><a href="#0">Notarius - Digital Authentication</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="#0">RESOURCES</a>
+                  <ul class="dropdown-menu vertical">
+                    <h3>resources</h3>
+                      <li><a href="#0">Fees Schedule</a></li>
+                      <li><a href="#0">Licensing & Registration</a></li>
+                      <li><a href="#0">Discipline & Enforcement</a></li>
+                      <li><a href="#0">Practice Standards & Guidelines</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><a href="javascript:;">
+                      <div class="image-wrapper">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_88_475)">
+                          <path d="M12.8769 12.2927L9.52051 8.98999C10.3994 8.03506 10.9395 6.77215 10.9395 5.38244C10.9391 2.40961 8.49042 0 5.46965 0C2.44888 0 0.000244141 2.40961 0.000244141 5.38244C0.000244141 8.35527 2.44888 10.7649 5.46965 10.7649C6.77483 10.7649 7.97192 10.3134 8.91222 9.56292L12.2816 12.8787C12.4458 13.0404 12.7123 13.0404 12.8765 12.8787C13.0411 12.717 13.0411 12.4545 12.8769 12.2927ZM5.46965 9.93676C2.91375 9.93676 0.841789 7.89773 0.841789 5.38244C0.841789 2.86715 2.91375 0.82812 5.46965 0.82812C8.02557 0.82812 10.0975 2.86715 10.0975 5.38244C10.0975 7.89773 8.02557 9.93676 5.46965 9.93676Z" fill="#007299"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_88_475">
+                          <rect width="13" height="13" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                      </div>
+                      <span>Search</span></a>
+                    </li>
+                    <li><a href="javascript:;">
+                      <div class="image-wrapper">
+                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 3.575H12.675V3.25C12.675 2.81902 12.5038 2.4057 12.199 2.10095C11.8943 1.7962 11.481 1.625 11.05 1.625H6.175C6.175 1.19402 6.0038 0.780698 5.69905 0.475951C5.3943 0.171205 4.98098 0 4.55 0H1.625C1.19402 0 0.780698 0.171205 0.475951 0.475951C0.171205 0.780698 0 1.19402 0 1.625V11.5375C0.000858509 11.9251 0.155218 12.2966 0.429305 12.5707C0.703391 12.8448 1.07488 12.9991 1.4625 13H13C13.431 13 13.8443 12.8288 14.149 12.524C14.4538 12.2193 14.625 11.806 14.625 11.375V5.2C14.625 4.76902 14.4538 4.3557 14.149 4.05095C13.8443 3.7462 13.431 3.575 13 3.575ZM2.275 11.5375C2.275 11.753 2.1894 11.9597 2.03702 12.112C1.88465 12.2644 1.67799 12.35 1.4625 12.35C1.24701 12.35 1.04035 12.2644 0.887976 12.112C0.735602 11.9597 0.65 11.753 0.65 11.5375V1.625C0.65 1.36641 0.752723 1.11842 0.935571 0.935571C1.11842 0.752723 1.36641 0.65 1.625 0.65H4.55C4.80859 0.65 5.05658 0.752723 5.23943 0.935571C5.42228 1.11842 5.525 1.36641 5.525 1.625H3.575C3.4888 1.625 3.40614 1.65924 3.34519 1.72019C3.28424 1.78114 3.25 1.8638 3.25 1.95C3.25 2.0362 3.28424 2.11886 3.34519 2.17981C3.40614 2.24076 3.4888 2.275 3.575 2.275H11.05C11.3086 2.275 11.5566 2.37772 11.7394 2.56057C11.9223 2.74342 12.025 2.99141 12.025 3.25V3.575H3.9C3.46902 3.575 3.0557 3.7462 2.75095 4.05095C2.4462 4.3557 2.275 4.76902 2.275 5.2V11.5375ZM13.975 11.375C13.975 11.6336 13.8723 11.8816 13.6894 12.0644C13.5066 12.2473 13.2586 12.35 13 12.35H2.678C2.83906 12.1096 2.92504 11.8268 2.925 11.5375V5.2C2.925 4.94141 3.02772 4.69342 3.21057 4.51057C3.39342 4.32772 3.64141 4.225 3.9 4.225H13C13.2586 4.225 13.5066 4.32772 13.6894 4.51057C13.8723 4.69342 13.975 4.94141 13.975 5.2V11.375Z" fill="#007299"/>
+                          </svg>
+                      </div>
+                      <span>Registry</span></a></li>
+                    <li><a href="javascript:;">
+                      <div class="image-wrapper">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2605 1.2381H9.90476V0.309524C9.90476 0.227433 9.87215 0.148704 9.81411 0.0906575C9.75606 0.0326105 9.67733 0 9.59524 0C9.51315 0 9.43442 0.0326105 9.37637 0.0906575C9.31833 0.148704 9.28572 0.227433 9.28572 0.309524V1.2381H3.71429V0.309524C3.71429 0.227433 3.68168 0.148704 3.62363 0.0906575C3.56558 0.0326105 3.48685 0 3.40476 0C3.32267 0 3.24394 0.0326105 3.1859 0.0906575C3.12785 0.148704 3.09524 0.227433 3.09524 0.309524V1.2381H1.73952C1.27817 1.2381 0.835719 1.42137 0.509495 1.74759C0.183271 2.07381 0 2.51627 0 2.97762V11.2605C0 11.7218 0.183271 12.1643 0.509495 12.4905C0.835719 12.8167 1.27817 13 1.73952 13H11.2605C11.7218 13 12.1643 12.8167 12.4905 12.4905C12.8167 12.1643 13 11.7218 13 11.2605V2.97762C13 2.51627 12.8167 2.07381 12.4905 1.74759C12.1643 1.42137 11.7218 1.2381 11.2605 1.2381ZM1.73952 1.85714H11.2605C11.5576 1.85714 11.8426 1.97519 12.0528 2.18532C12.2629 2.39545 12.381 2.68045 12.381 2.97762V3.71429H0.619048V2.97762C0.619048 2.68045 0.737098 2.39545 0.947228 2.18532C1.15736 1.97519 1.44236 1.85714 1.73952 1.85714ZM11.2605 12.381H1.73952C1.44236 12.381 1.15736 12.2629 0.947228 12.0528C0.737098 11.8426 0.619048 11.5576 0.619048 11.2605V4.33333H12.381V11.2605C12.381 11.5576 12.2629 11.8426 12.0528 12.0528C11.8426 12.2629 11.5576 12.381 11.2605 12.381Z" fill="#007299"/>
+                          </svg>
+                      </div>
+                    <span>events</span></a></li>
+                    <li><a href="javascript:;">
+                      <div class="image-wrapper">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.13605 5.90442C3.973 5.90348 3.84005 6.03487 3.83912 6.1979C3.83866 6.27721 3.87012 6.35338 3.92644 6.40924L6.28821 8.77101C6.40337 8.88549 6.58934 8.88549 6.70447 8.77101L9.06624 6.40924C9.19007 6.30319 9.20451 6.11682 9.09844 5.99299C8.99239 5.86915 8.80602 5.85472 8.68218 5.96079C8.67064 5.97069 8.65985 5.98144 8.64999 5.99299L6.79304 7.84994V0.295212C6.79304 0.132181 6.66086 0 6.4978 0C6.33474 0 6.20259 0.132181 6.20259 0.295212V7.84994L4.34564 5.99299C4.29041 5.93664 4.21493 5.90475 4.13605 5.90442Z" fill="#007299"/>
+                          <path d="M12.8583 5.19744C12.3358 2.65275 10.3472 0.664177 7.80251 0.141645H7.80545C7.65871 0.0705821 7.48213 0.131928 7.41107 0.278672C7.34 0.425415 7.40135 0.601994 7.54809 0.673057C7.58874 0.692745 7.63334 0.702842 7.6785 0.702563C10.8735 1.35474 12.9349 4.47354 12.2827 7.66859C11.6306 10.8636 8.51179 12.925 5.31675 12.2728C2.12171 11.6207 0.0603224 8.50186 0.712498 5.30681C1.18581 2.98802 2.99796 1.1759 5.31675 0.702563C5.47981 0.703527 5.61275 0.572108 5.61369 0.409076C5.61465 0.24602 5.48323 0.113078 5.3202 0.112139C5.27504 0.111885 5.23044 0.121983 5.1898 0.141645C1.6761 0.863133 -0.587465 4.29643 0.134024 7.81015C0.855512 11.3239 4.28881 13.5874 7.80251 12.8659C11.3162 12.1444 13.5798 8.71114 12.8583 5.19744Z" fill="#007299"/>
+                        </svg>
+                      </div>
+                    <span>login</span></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav class="humburgur-menu">
+      <span class="close-humburgur"><i class="far fa-times"></i></span>
+      <ul class="nav-links">
+          <li class="nav-link"><a href="#">Public</a></li>
+          <li class="nav-link"><a href="#">LICENCE HOLDERS & MEMBERS</a></li>
+          <li class="nav-link"><a href="#">Applicants</a></li>
+          <li class="nav-link"><a href="#">Resources</a></li>
+      </ul>
+  </nav>
+  </header>
+  <section class="inner-page-main-section blue-bg" style="background-image: url(../assets/images/pexels-thisisengineering-3861438.png);">
+        <div class="grid-container">
+             <div class="breadcrumb">
+                <img src="../assets/images/pages.svg" alt="breadcrumb-icon">
+                <nav aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs">
+                      <li><a href="#">main page</a></li>
+                      <li>
+                        <span class="show-for-sr">Current: </span> overview
+                      </li>
+                    </ul>
+                  </nav>   
+             </div> 
+             <div class="content-area">
+                <div class="public-content">
+                    <div class="sub-title">
+                        <h1>Reports</h1>
+                    </div>
+                    <div class="paragraph sub-paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur congue blandit, consectetur adipiscing elit. Vivamus consectetu.
+                        </p>
+                    </div>
+                </div>
+             </div> 
+             <div class="filter-section">
+                  <div class="filter-wrapper">
+                      <div class="filter-left">
+                          <a href="javascript:;" class="filter-icon">
+                              <img src="../assets/images/edit.svg" alt="">
+                          </a>
+                          <div class="pn-select">
+                              <div class="select">
+                                <span class="selected-item">category</span>
+                                <span class="down-arrow"><img src="../assets/images/Down_Arrow_3_.svg" alt=""></span>
+                              </div>
+                              <input type="hidden" name="gender">
+                              <ul class="pn-select-option">
+                                <li id="membership">membership</li>
+                                <li id="free">free</li>
+                                <li id="paid">paid</li>
+                              </ul>
+                          </div>
+                          <div class="pn-select">
+                              <div class="select">
+                                <span class="selected-item">year</span>
+                                <span class="down-arrow"><img src="../assets/images/Down_Arrow_3_.svg" alt=""></span>
+                              </div>
+                              <input type="hidden" name="gender">
+                              <ul class="pn-select-option">
+                                <li id="2020">2020</li>
+                                <li id="2021">2021</li>
+                                <li id="2022">2022</li>
+                              </ul>
+                            </div>
+                      </div>
+                      <div class="filter-search">
+                          <form>
+                              <input type="text" placeholder="enter keyword or phrase">
+                              <a href="javascript:;" class="search-icon"><img src="../assets/images/search-interface-symbol.png" alt=""></a>
+                          </form>
+                      </div>
+                  </div>
+            </div> 
+        </div>
+  </section> 
+  <section class="inside-template">
+    <div class="resource-grid-section">
+      <div class="grid-container">
+          <div class="title">
+              <h3>Surveys</h3>
+          </div>
+          <div class="grid-3-column">
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="resource-grid-section">
+      <div class="grid-container">
+          <div class="title">
+              <h3>Annual Reports</h3>
+          </div>
+          <div class="grid-3-column">
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+              <div class="card-wrapper">
+                  <div class="title">
+                      <h3>Resource Title</h3>
+                  </div>
+                  <div class="paragraph">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                      </p>
+                  </div>
+                  <a href="javascript:;" class="btn btn-lg btn-block btn-outline"> download <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_134_1443)">
+                      <path d="M8 0C7.7928 0 7.59409 0.0823097 7.44757 0.228823C7.30106 0.375336 7.21875 0.57405 7.21875 0.78125V15.2188C7.21875 15.426 7.30106 15.6247 7.44757 15.7712C7.59409 15.9177 7.7928 16 8 16C8.2072 16 8.40591 15.9177 8.55243 15.7712C8.69894 15.6247 8.78125 15.426 8.78125 15.2188V0.78125C8.78125 0.57405 8.69894 0.375336 8.55243 0.228823C8.40591 0.0823097 8.2072 0 8 0Z" fill="#007299"/>
+                      <path d="M15.2188 7.21875H0.78125C0.57405 7.21875 0.375336 7.30106 0.228823 7.44757C0.08231 7.59409 0 7.7928 0 8C0 8.2072 0.08231 8.40591 0.228823 8.55243C0.375336 8.69894 0.57405 8.78125 0.78125 8.78125H15.2188C15.426 8.78125 15.6247 8.69894 15.7712 8.55243C15.9177 8.40591 16 8.2072 16 8C16 7.7928 15.9177 7.59409 15.7712 7.44757C15.6247 7.30106 15.426 7.21875 15.2188 7.21875Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_134_1443">
+                      <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0 16)"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span> </a>
+              </div>
+          </div>
+
+          
+      </div>
+    </div>
+  </section>
+  <section class="career-grid mt-0">
+    <div class="swiper careerSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="content-wrapper">
+            <div class="sub-title">
+              <h3>Discipline & Enforcement</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet..
+                </p>
+            </div>
+          </div>
+          <a href="javascript:;" class="read-more">read more <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_147_4925)">
+            <path d="M16.8876 8.22764L13.0241 4.36406C12.8853 4.202 12.6414 4.18311 12.4793 4.32193C12.3173 4.46071 12.2984 4.70462 12.4372 4.86668C12.4502 4.88179 12.4642 4.8959 12.4793 4.90881L15.6822 8.11558H0.386345C0.172985 8.11558 0 8.28857 0 8.50196C0 8.71535 0.172985 8.8883 0.386345 8.8883H15.6822L12.4793 12.0912C12.3173 12.23 12.2984 12.4739 12.4372 12.6359C12.576 12.798 12.8199 12.8169 12.982 12.6781C12.9971 12.6651 13.0112 12.651 13.0241 12.6359L16.8877 8.77236C17.0375 8.62172 17.0375 8.37835 16.8876 8.22764Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_147_4925">
+            <rect width="17" height="17" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </span></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrapper">
+            <div class="sub-title">
+              <h3>Discipline & Enforcement</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet..
+                </p>
+            </div>
+          </div>
+          <a href="javascript:;" class="read-more">read more <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_147_4925)">
+            <path d="M16.8876 8.22764L13.0241 4.36406C12.8853 4.202 12.6414 4.18311 12.4793 4.32193C12.3173 4.46071 12.2984 4.70462 12.4372 4.86668C12.4502 4.88179 12.4642 4.8959 12.4793 4.90881L15.6822 8.11558H0.386345C0.172985 8.11558 0 8.28857 0 8.50196C0 8.71535 0.172985 8.8883 0.386345 8.8883H15.6822L12.4793 12.0912C12.3173 12.23 12.2984 12.4739 12.4372 12.6359C12.576 12.798 12.8199 12.8169 12.982 12.6781C12.9971 12.6651 13.0112 12.651 13.0241 12.6359L16.8877 8.77236C17.0375 8.62172 17.0375 8.37835 16.8876 8.22764Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_147_4925">
+            <rect width="17" height="17" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </span></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrapper">
+            <div class="sub-title">
+              <h3>Job Postings</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet..
+                </p>
+            </div>
+          </div>
+          <a href="javascript:;" class="read-more">read more <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_147_4925)">
+            <path d="M16.8876 8.22764L13.0241 4.36406C12.8853 4.202 12.6414 4.18311 12.4793 4.32193C12.3173 4.46071 12.2984 4.70462 12.4372 4.86668C12.4502 4.88179 12.4642 4.8959 12.4793 4.90881L15.6822 8.11558H0.386345C0.172985 8.11558 0 8.28857 0 8.50196C0 8.71535 0.172985 8.8883 0.386345 8.8883H15.6822L12.4793 12.0912C12.3173 12.23 12.2984 12.4739 12.4372 12.6359C12.576 12.798 12.8199 12.8169 12.982 12.6781C12.9971 12.6651 13.0112 12.651 13.0241 12.6359L16.8877 8.77236C17.0375 8.62172 17.0375 8.37835 16.8876 8.22764Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_147_4925">
+            <rect width="17" height="17" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </span></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrapper">
+            <div class="sub-title">
+              <h3>Reports</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet..
+                </p>
+            </div>
+          </div>
+          <a href="javascript:;" class="read-more">read more <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_147_4925)">
+            <path d="M16.8876 8.22764L13.0241 4.36406C12.8853 4.202 12.6414 4.18311 12.4793 4.32193C12.3173 4.46071 12.2984 4.70462 12.4372 4.86668C12.4502 4.88179 12.4642 4.8959 12.4793 4.90881L15.6822 8.11558H0.386345C0.172985 8.11558 0 8.28857 0 8.50196C0 8.71535 0.172985 8.8883 0.386345 8.8883H15.6822L12.4793 12.0912C12.3173 12.23 12.2984 12.4739 12.4372 12.6359C12.576 12.798 12.8199 12.8169 12.982 12.6781C12.9971 12.6651 13.0112 12.651 13.0241 12.6359L16.8877 8.77236C17.0375 8.62172 17.0375 8.37835 16.8876 8.22764Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_147_4925">
+            <rect width="17" height="17" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </span></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="content-wrapper">
+            <div class="sub-title">
+              <h3>Discipline & Enforcement</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet..
+                </p>
+            </div>
+          </div>
+          <a href="javascript:;" class="read-more">read more <span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_147_4925)">
+            <path d="M16.8876 8.22764L13.0241 4.36406C12.8853 4.202 12.6414 4.18311 12.4793 4.32193C12.3173 4.46071 12.2984 4.70462 12.4372 4.86668C12.4502 4.88179 12.4642 4.8959 12.4793 4.90881L15.6822 8.11558H0.386345C0.172985 8.11558 0 8.28857 0 8.50196C0 8.71535 0.172985 8.8883 0.386345 8.8883H15.6822L12.4793 12.0912C12.3173 12.23 12.2984 12.4739 12.4372 12.6359C12.576 12.798 12.8199 12.8169 12.982 12.6781C12.9971 12.6651 13.0112 12.651 13.0241 12.6359L16.8877 8.77236C17.0375 8.62172 17.0375 8.37835 16.8876 8.22764Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_147_4925">
+            <rect width="17" height="17" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </span></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="pn-anouncement-section">
+    <div class="grid-container">
+      <div class="card-wrapper">
+        <div class="title dark">
+          <h2>announcements & events</h2>
+      </div>
+      <div class="card-swiper">
+          <div class="card-heading">
+              <h3>announcements</h3>
+              <div class="card-footer">
+                  <a href="javascript:;" class="view-all">+ view all</a>
+                  <div class="card-navigaiton">
+                    <div class="swiper-button-next card-next"></div>
+                    <div class="swiper-button-prev card-prev"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper anouncementSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="header-title">
+                  <span class="date">02.02.2022</span>
+                  <span class="share">share</span>
+                  <h3><span>pegnl</span> holding Regulations Consultation</h3>
+                </div>
+                <p>pegnl has conducted a review of the Engineering and Geoscience Regulations, 2011. One of the guiding documents of the organization, the Regulations set parameters for such things as registration, discipline and membership categories.</p>
+                <div class="swiper-footer">
+                    <a href="javascript:;" class="read-more-btn btn btn-sm btn-grey">read more <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_147_4942)">
+                      <path d="M8.11579 5.07943L5.84312 2.80674C5.76148 2.71141 5.61801 2.7003 5.52268 2.78195C5.42734 2.86359 5.41623 3.00707 5.49789 3.1024C5.50551 3.11129 5.51379 3.11959 5.52268 3.12718L7.40672 5.01352H-1.59085C-1.71636 5.01352 -1.81812 5.11527 -1.81812 5.2408C-1.81812 5.36632 -1.71636 5.46806 -1.59085 5.46806H7.40672L5.52268 7.35211C5.42734 7.43375 5.41623 7.57722 5.49789 7.67255C5.57955 7.76788 5.723 7.779 5.81833 7.69734C5.82722 7.68972 5.83552 7.68144 5.84312 7.67255L8.11581 5.39986C8.20392 5.31125 8.20392 5.16808 8.11579 5.07943Z" fill="#007299"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_147_4942">
+                      <rect width="10" height="10" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg></span></a>
+                    <h6>category: membership</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="header-title">
+                  <span class="date">02.02.2022</span>
+                  <span class="share">share</span>
+                  <h3><span>pegnl</span> holding Regulations Consultation</h3>
+                </div>
+                <p>pegnl has conducted a review of the Engineering and Geoscience Regulations, 2011. One of the guiding documents of the organization, the Regulations set parameters for such things as registration, discipline and membership categories.</p>
+                <div class="swiper-footer">
+                  <a href="javascript:;" class="read-more-btn btn btn-sm btn-grey">read more <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_147_4942)">
+                    <path d="M8.11579 5.07943L5.84312 2.80674C5.76148 2.71141 5.61801 2.7003 5.52268 2.78195C5.42734 2.86359 5.41623 3.00707 5.49789 3.1024C5.50551 3.11129 5.51379 3.11959 5.52268 3.12718L7.40672 5.01352H-1.59085C-1.71636 5.01352 -1.81812 5.11527 -1.81812 5.2408C-1.81812 5.36632 -1.71636 5.46806 -1.59085 5.46806H7.40672L5.52268 7.35211C5.42734 7.43375 5.41623 7.57722 5.49789 7.67255C5.57955 7.76788 5.723 7.779 5.81833 7.69734C5.82722 7.68972 5.83552 7.68144 5.84312 7.67255L8.11581 5.39986C8.20392 5.31125 8.20392 5.16808 8.11579 5.07943Z" fill="#007299"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_147_4942">
+                    <rect width="10" height="10" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></span></a>
+                    <h6>category: membership</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="header-title">
+                  <span class="date">02.02.2022</span>
+                  <span class="share">share</span>
+                  <h3><span>pegnl</span> holding Regulations Consultation</h3>
+                </div>
+                <p>pegnl has conducted a review of the Engineering and Geoscience Regulations, 2011. One of the guiding documents of the organization, the Regulations set parameters for such things as registration, discipline and membership categories.</p>
+                <div class="swiper-footer">
+                  <a href="javascript:;" class="read-more-btn btn btn-sm btn-grey">read more <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_147_4942)">
+                    <path d="M8.11579 5.07943L5.84312 2.80674C5.76148 2.71141 5.61801 2.7003 5.52268 2.78195C5.42734 2.86359 5.41623 3.00707 5.49789 3.1024C5.50551 3.11129 5.51379 3.11959 5.52268 3.12718L7.40672 5.01352H-1.59085C-1.71636 5.01352 -1.81812 5.11527 -1.81812 5.2408C-1.81812 5.36632 -1.71636 5.46806 -1.59085 5.46806H7.40672L5.52268 7.35211C5.42734 7.43375 5.41623 7.57722 5.49789 7.67255C5.57955 7.76788 5.723 7.779 5.81833 7.69734C5.82722 7.68972 5.83552 7.68144 5.84312 7.67255L8.11581 5.39986C8.20392 5.31125 8.20392 5.16808 8.11579 5.07943Z" fill="#007299"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_147_4942">
+                    <rect width="10" height="10" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></span></a>
+                    <h6>category: membership</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="header-title">
+                  <span class="date">02.02.2022</span>
+                  <span class="share">share</span>
+                  <h3><span>pegnl</span> holding Regulations Consultation</h3>
+                </div>
+                <p>pegnl has conducted a review of the Engineering and Geoscience Regulations, 2011. One of the guiding documents of the organization, the Regulations set parameters for such things as registration, discipline and membership categories.</p>
+                <div class="swiper-footer">
+                  <a href="javascript:;" class="read-more-btn btn btn-sm btn-grey">read more <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_147_4942)">
+                    <path d="M8.11579 5.07943L5.84312 2.80674C5.76148 2.71141 5.61801 2.7003 5.52268 2.78195C5.42734 2.86359 5.41623 3.00707 5.49789 3.1024C5.50551 3.11129 5.51379 3.11959 5.52268 3.12718L7.40672 5.01352H-1.59085C-1.71636 5.01352 -1.81812 5.11527 -1.81812 5.2408C-1.81812 5.36632 -1.71636 5.46806 -1.59085 5.46806H7.40672L5.52268 7.35211C5.42734 7.43375 5.41623 7.57722 5.49789 7.67255C5.57955 7.76788 5.723 7.779 5.81833 7.69734C5.82722 7.68972 5.83552 7.68144 5.84312 7.67255L8.11581 5.39986C8.20392 5.31125 8.20392 5.16808 8.11579 5.07943Z" fill="#007299"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_147_4942">
+                    <rect width="10" height="10" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></span></a>
+                    <h6>category: membership</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+</section>
+<section class="pn-anouncement-section style-b">
+    <div class="grid-container">
+      <div class="card-wrapper">
+      <div class="card-swiper">
+          <div class="card-heading">
+              <h3>event</h3>
+              <div class="card-footer">
+                <a href="javascript:;" class="view-all">+ view all</a>
+                  <div class="card-navigaiton">
+                    <div class="swiper-button-next event-next"></div>
+                    <div class="swiper-button-prev event-prev"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper eventSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="card-header">
+                      <div class="header">
+                          july <span>20-24, 2022</span>
+                      </div>
+                      <div class="header-title">
+                          <h4>Event Name 
+                            <span class="share">share</span>
+                          </h4>
+                          <p>Location: <span>The Delta, 1 Gower Street,  St. John’s, NL</span> </p>
+                      </div>
+                  </div>
+                  <div class="image-wrapper">
+                      <img src="../assets/images/shutterstock_570879844.png" alt="">
+                      <a href="javascript:;" class="go">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_88_300)">
+                        <path d="M19.8678 9.67938L15.3225 5.13399C15.1592 4.94333 14.8722 4.9211 14.6816 5.08442C14.4909 5.2477 14.4687 5.53464 14.632 5.7253C14.6472 5.74308 14.6638 5.75968 14.6816 5.77487L18.4497 9.54754H0.454523C0.203512 9.54754 0 9.75105 0 10.0021C0 10.2532 0.203512 10.4566 0.454523 10.4566H18.4497L14.6816 14.2247C14.4909 14.388 14.4687 14.675 14.632 14.8656C14.7953 15.0563 15.0822 15.0785 15.2729 14.9152C15.2907 14.8999 15.3073 14.8834 15.3225 14.8656L19.8679 10.3202C20.0441 10.143 20.0441 9.85668 19.8678 9.67938Z" fill="#34515A"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_88_300">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                      </a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-header">
+                    <div class="header">
+                        july <span>20-24, 2022</span>
+                    </div>
+                    <div class="header-title">
+                        <h4>Event Name 
+                          <span class="share">share</span>
+                        </h4>
+                        <p>Location: The Delta, 1 Gower Street,  St. John’s, NL</p>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../assets/images/pexels-rfstudio-3825581.png" alt="">
+                    <a href="javascript:;" class="go">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_88_300)">
+                      <path d="M19.8678 9.67938L15.3225 5.13399C15.1592 4.94333 14.8722 4.9211 14.6816 5.08442C14.4909 5.2477 14.4687 5.53464 14.632 5.7253C14.6472 5.74308 14.6638 5.75968 14.6816 5.77487L18.4497 9.54754H0.454523C0.203512 9.54754 0 9.75105 0 10.0021C0 10.2532 0.203512 10.4566 0.454523 10.4566H18.4497L14.6816 14.2247C14.4909 14.388 14.4687 14.675 14.632 14.8656C14.7953 15.0563 15.0822 15.0785 15.2729 14.9152C15.2907 14.8999 15.3073 14.8834 15.3225 14.8656L19.8679 10.3202C20.0441 10.143 20.0441 9.85668 19.8678 9.67938Z" fill="#34515A"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_88_300">
+                      <rect width="20" height="20" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-header">
+                  <div class="header">
+                      july <span>20-24, 2022</span>
+                  </div>
+                  <div class="header-title">
+                      <h4>Event Name 
+                        <span class="share">share</span>
+                      </h4>
+                      <p>Location: The Delta, 1 Gower Street,  St. John’s, NL</p>
+                  </div>
+              </div>
+              <div class="image-wrapper">
+                  <img src="../assets/images/shutterstock_570879844.png" alt="">
+                  <a href="javascript:;" class="go">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_88_300)">
+                    <path d="M19.8678 9.67938L15.3225 5.13399C15.1592 4.94333 14.8722 4.9211 14.6816 5.08442C14.4909 5.2477 14.4687 5.53464 14.632 5.7253C14.6472 5.74308 14.6638 5.75968 14.6816 5.77487L18.4497 9.54754H0.454523C0.203512 9.54754 0 9.75105 0 10.0021C0 10.2532 0.203512 10.4566 0.454523 10.4566H18.4497L14.6816 14.2247C14.4909 14.388 14.4687 14.675 14.632 14.8656C14.7953 15.0563 15.0822 15.0785 15.2729 14.9152C15.2907 14.8999 15.3073 14.8834 15.3225 14.8656L19.8679 10.3202C20.0441 10.143 20.0441 9.85668 19.8678 9.67938Z" fill="#34515A"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_88_300">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                  </a>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-header">
+                <div class="header">
+                    july <span>20-24, 2022</span>
+                </div>
+                <div class="header-title">
+                    <h4>Event Name 
+                      <span class="share">share</span>
+                    </h4>
+                    <p>Location: The Delta, 1 Gower Street,  St. John’s, NL</p>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="../assets/images/shutterstock_570879844.png" alt="">
+                <a href="javascript:;" class="go">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_88_300)">
+                  <path d="M19.8678 9.67938L15.3225 5.13399C15.1592 4.94333 14.8722 4.9211 14.6816 5.08442C14.4909 5.2477 14.4687 5.53464 14.632 5.7253C14.6472 5.74308 14.6638 5.75968 14.6816 5.77487L18.4497 9.54754H0.454523C0.203512 9.54754 0 9.75105 0 10.0021C0 10.2532 0.203512 10.4566 0.454523 10.4566H18.4497L14.6816 14.2247C14.4909 14.388 14.4687 14.675 14.632 14.8656C14.7953 15.0563 15.0822 15.0785 15.2729 14.9152C15.2907 14.8999 15.3073 14.8834 15.3225 14.8656L19.8679 10.3202C20.0441 10.143 20.0441 9.85668 19.8678 9.67938Z" fill="#34515A"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_88_300">
+                  <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                </a>
+            </div>
+        </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+</section>
+<footer class="footer inner-page-footer">
+    <div class="apply-section">
+        <div class="grid-container">
+            <div class="text-center">
+                <h3>Are you a New Applicant</h3>
+                <a href="javascript:;" class="btn btn-lg btn-grey">apply here</a>
+            </div>
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="../assets/images/footer-logo-white.svg" alt="">
+              </a>
+          </div>
+        </div>
+    </div>
+    <div class="footer-menu">
+        <div class="grid-container">
+            <div class="row">
+                <div class="column large-8 align-self-bottom medium-12 small-12">
+                    <ul class="menu">
+                        <li><a href="javascript:;">public</a></li>
+                        <li><a href="javascript:;">LICENSE HOLDERS & MEMBERS</a></li>
+                        <li><a href="javascript:;">APPLICXANTS</a></li>
+                        <li><a href="javascript:;">resources</a></li>
+                        <li><a href="javascript:;">about</a></li>
+                        <li><a href="javascript:;">contact</a></li>
+                    </ul>
+                </div>
+                <div class="column large-4 medium-12">
+                    <div class="row">
+                        <div class="column large-6 medium-6 small-12">
+                            <p>
+                              120 Torbay Road,
+                              Prince Charles Building, Suite W-270
+                              St. Jihn’s, NL, Canada, A1A 2G8
+                            </p>
+                        </div>
+                        <div class="column large-6 medium-6 small-12">
+                          <div class="contact-info">
+                            <a href="mailto:main@pegnl.ca"><span>Email:</span> main@pegnl.ca</a>
+                            <a href="tel:709.753.7714"><span>phone:</span> 709.753.7714</a>
+                            <a href="mailto:main@pegnl.ca"><span>fax:</span> 709.753.6131</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-minimize">
+                  <div class="row">
+                      <div class="column large-8 medium-12 small-12">
+                          <div class="privacy-menu">
+                              <p>©2022 pegnl  All Rights Reserved</p>
+                              <ul>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Terms of Use</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="column large-4 medium-12 small-12">
+                        <div class="row">
+                            <div class="column large-8">
+                              <a href="javascriapt:;" class="jac-singnature">
+                                <img src="../assets/images/JAC-Signature.svg" alt="">
+                              </a>
+                            </div>
+                            <div class="column large-4">
+                              <ul class="social-media">
+                                <li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script src="../node_modules/foundation-sites/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/70f6bca6f4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js"></script>
+    <script type='text/javascript' src='https://kit.fontawesome.com/70f6bca6f4.js?ver=5.9.2'></script>
+    <script src="../assets/js/script.js"></script> 
+
+  </body>
+</html>
