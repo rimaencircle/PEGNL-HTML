@@ -1,4 +1,9 @@
 .pn-slider-section{
+    margin-top: -140px;
+
+    @media #{$large} {
+        margin-top: -116px;
+    }
     .homeSwiper{
         position: relative;
         height: 100vh;
@@ -157,6 +162,7 @@
                 display: block;
                 visibility: hidden;
                 @include transition;
+                white-space: nowrap;
             }
             &::after{
                 content: '';
@@ -188,6 +194,10 @@
             }
             .slider-title{
                 right: 15px;
+            }
+
+            &.swiper-button-disabled{
+                display: none;
             }
         }
         .swiper-button-prev{

@@ -1,5 +1,19 @@
 header{
+    &.inner-page-header{
+        
+        .p_header{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
 
+        &.application-template{
+            .p_header {
+                background-color: $primary;
+            }
+        }
+    }
     .stiky-header{
         transform: translateY(-100%);
         position: fixed;
@@ -85,13 +99,11 @@ header{
     }
     .p_header{
         padding: 0 65px;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
         z-index: 9;
-        background: rgba(255, 255, 255, 0.7); 
-        background: linear-gradient(16.8deg, #007299 51.78%, rgba(0, 114, 153, 0.92) 97.24%);
 
         &::before{
             content: '';
@@ -491,6 +503,23 @@ header{
                                    
                                 }
                             }
+                            &.current_page_ancestor {
+                                a{
+                                    &::before{
+                                        transform: translateY(0);
+                                    }
+                                    
+                                }
+
+                                &:hover{
+                                    a{
+                                        &::before{
+                                            transform: translateY(100%);
+                                        }
+                                        
+                                    } 
+                                }
+                            }
                         }
                     }
                 }
@@ -591,6 +620,10 @@ header{
                     -webkit-text-fill-color: transparent;
                     margin-left: 20px;
                 }
+
+                @media #{$tablet} {
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -607,25 +640,85 @@ header{
         cursor: pointer;
     }
 
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 45%;
+        background-image: url(../images/flying.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 9;
+        opacity: 0.85;
+        z-index: -1;
+        width: 321px;
+        height: 282px;
+        animation: mover 1s infinite  alternate;
+
+        @keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        @media #{$tablet} {
+            width: 200px;
+            height: 200px;
+            top: 5%;
+        }
+        @media #{$small} {
+            width: 100px;
+            height: 100px;
+        }
+    }
     &::before{
         content: '';
         position: absolute;
-        width: 1500px;
-        height: 1500px;
-        left: -60%;
-        top: -30%;
+        left: -22%;
+        top: 0;
         background-image: url(../images/circle.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         z-index: 9;
-        border-radius: 50%;
         opacity: 0.7;
-        animation: infinite-spinning 8s infinite linear;
         z-index: -1;
+        width: 1000px;
+        height: 1000px;
 
-        @media #{$extra} {
-            width: 1700px;
-            height: 1700px;  
+        @media #{$tablet} {
+            width: 500px;
+            height: 500px;
+            left: -48%;
+            top: 67%;
+        }
+    }
+}
+.topMessageSwiper {
+    .swiper-wrapper{
+        .swiper-slide {
+            padding: 0 46px;
+        }
+    }
+    .swiper-button-next{
+        right: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../images/Button-Arrow-Right-Black.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 15px;
+            width: 15px;
+        }
+    }
+    .swiper-button-prev{
+        left: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../images/Button-Arrow-Left-Black.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 15px;
+            width: 15px;
         }
     }
 }

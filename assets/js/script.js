@@ -14,6 +14,9 @@ $(document).ready(function () {
             $('.stiky-header').removeClass('is-sticky');
         }
     });
+    $(".pn_close_btn").click(function () {
+        $(".pn_top_message").addClass('pn_hide');
+    });
     /*Sticky Header*/
 
     // $('li.menu-item').click(function () {
@@ -32,7 +35,14 @@ $(document).ready(function () {
         $("#responsive-menu").toggleClass('open');
         $('body').toggleClass('overflow-hidden');
     });
-    
+    var Messageswiper = new Swiper(".topMessageSwiper", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".topMessageSwiper .swiper-button-next",
+            prevEl: ".topMessageSwiper .swiper-button-prev",
+        },
+    })
     var homeSwiper = new Swiper(".homeSwiper", { 
         loop: true,
         normalizeSlideIndex:true,
@@ -41,9 +51,16 @@ $(document).ready(function () {
             prevEl: ".homeSwiper .swiper-button-prev",
         },
         onAny(eventName, ...args) {
-            $(".homeSwiper .swiper-button-prev").html(`<span>0${args[0].realIndex + 1}</span><span class='slider-title'>${args[0].realIndex + 1}</span>`);
-            $(".homeSwiper .swiper-button-next").html(`<span>0${parseInt($('.homeSwiper .swiper-slide-next').attr("data-swiper-slide-index"), 10) + 1}</span><span class='slider-title'>${args[0].realIndex + 1}</span>`);
+            $(".homeSwiper .swiper-button-prev").html(`<span>0${args[0].realIndex + 1}</span>`);
+
+            $(".homeSwiper .swiper-button-next").html(`<span>0${args[0].realIndex + 2 > parseInt($('.homeSwiper .swiper-wrapper')[0], 10) ? "1" : args[0].realIndex + 2}</span>`);
         }
+        // onAny(eventName, ...args) {
+        //     const attributes = [];
+        //     $(".homeSwiper .swiper-button-prev").html(`<span>0${args[0].realIndex + 1}</span><span class='slider-title'>${$('.homeSwiper .swiper-slide')[args[0].realIndex + 1].attributes['data-title'].value}</span>`);
+
+        //     $(".homeSwiper .swiper-button-next").html(`<span>0${args[0].realIndex + 2 > parseInt($('.homeSwiper .swiper-wrapper')[0].attributes['data-length'].value, 10) ? "1" : args[0].realIndex + 2}</span><span class='slider-title'>${$('.homeSwiper .swiper-slide')[args[0].realIndex + 2].attributes['data-title'].value}</span>`);
+        // }
     });
     console.log(homeSwiper);
     var anouncementSwiper = new Swiper(".anouncementSwiper", { 

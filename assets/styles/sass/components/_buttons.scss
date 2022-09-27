@@ -100,21 +100,34 @@
         &.btn-block{
             width: 100%;
         }
+        span{
+            &.right-arrow{
+                height: 10px;
+                width: 10px;
+            } 
+        }
     }
     &.btn-grey{
         background-color:$silver;
         color: $primary;
 
+        span{
+            &.right-arrow{
+                background-image: url('../images/dark-right-arrow.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+                @include transition;
+            } 
+        }
         &:hover{
             background-color: $primary;
             color: $white;
 
             span{
 
-                svg{
-                    path{
-                        fill: $white;
-                    }
+                &.right-arrow{
+                    background-position: left;
                 }
             }
         }
@@ -166,17 +179,25 @@
         background-color: $white;
         border: 1px solid $primary;
         color: $primary;
+        span{
 
+            &.twins-plus{
+                background-image: url('../images/plus-twins.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+                @include transition;
+                height: 16px;
+                width: 16px;
+            }
+        }
         &:hover{
             background-color: $primary;
             color: $white;
 
             span{
-
-                svg{
-                    path{
-                        fill: $white;
-                    }
+                &.twins-plus{
+                    background-position: left;
                 }
             }
         }

@@ -539,8 +539,26 @@
                                     background-color: $secondary;
                                     border-radius: 0 5px;
 
+                                    span{
+                                        &.right-arrow{
+                                            background-image: url('../images/dark-right.svg');
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: right;
+                                            @include transition;
+                                            height: 20px;
+                                            width: 20px;
+                                        }
+                                    }
                                     &:hover{
                                         background-color: $white;
+
+                                        span{
+
+                                            &.right-arrow{
+                                                background-position: left;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -558,9 +576,10 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 160px 0 50px;
+    padding: 180px 0 50px;
     z-index: 1;
-    min-height:448px; 
+    min-height:357px; 
+    
     &::before{
         content: '';
         position: absolute;
@@ -620,7 +639,10 @@
             content: none;
         }
         .filter-section{
-            bottom: 120px;
+           position: relative;
+           bottom: inherit;
+           left: 0;
+           right: 0;
         }
     }
     .breadcrumb{
@@ -735,6 +757,11 @@
                 line-height: 26px;
                 color: $white;
                 margin-bottom: 30px;
+                
+                @media #{$md} {
+                    font-size: 14px;
+                    line-height: 22px; 
+                }
             }
         }
         .listing{
@@ -752,6 +779,11 @@
                     position: relative;
                     margin-bottom: 21px;
                     padding-left: 38px;
+
+                    @media #{$md} {
+                        font-size: 14px;
+                        line-height: 22px; 
+                    }
 
                     &::before{
                         content: '';
@@ -830,6 +862,33 @@
         .content-area{
             .staff-address{
                 padding: 0px 36px;
+
+                .address-info{
+                    .address-wrapper{
+                        position: relative;
+                        padding-left: 40px;
+                        width: 266px;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 11px;
+                            transform: translateY(-50%);
+                            background-image: url(../images/check.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            height: 21px;
+                            width: 21px;
+                        }
+
+                        p{
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 18px;
+
+                        }
+                    }
+                }
             }
             .listing{
                 ul{
@@ -1060,7 +1119,10 @@
     background: rgba(237, 247, 250 , 0.8);
     @media #{$large} {
         padding: 30px;
-     }
+    }
+     @media #{$md} {
+        padding: 15px;
+    }
     .submit-content{
         background-color: $white;
         padding: 30px 55px;
@@ -1095,6 +1157,14 @@
             margin-bottom: 17px;
             position: relative;
             padding-left: 38px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+
+            @media #{$md} {
+                font-size: 14px;
+                line-height: 16px;  
+            }
 
             &::before{
                 content: '';
@@ -1125,6 +1195,11 @@
             max-width: 370px;
             margin: 0 auto;
             color: $slaty-black;
+
+            @media #{$md} {
+                font-size: 14px;
+                line-height: 24px; 
+            }
         }
     }
     .title{
@@ -1210,13 +1285,6 @@
                     top: 12px;
                 }
 
-                &:hover{
-
-                    span{
-                        transform: rotate(360deg);
-                        @include transition__500;
-                    }
-                }
             }
         }
     }
@@ -1336,7 +1404,18 @@
                 z-index: -1;
                 opacity: 0;
             }
-
+            span{
+                max-width: 17px;
+                &.black-right-arrow{
+                    background-image: url('../images/right-black-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: right;
+                    @include transition;
+                    height: 17px;
+                    width: 17px;
+                } 
+            }
             &:hover{
                 color: $white;
                 gap: 10px;
@@ -1349,16 +1428,13 @@
                     top: 0;
                 }
 
-                svg{
+                span{
 
-                    g{
-                        path{
-                            fill:$white;
-                            @include transition__500;
-                        }
+                    &.black-right-arrow{
+                        background-position: left;
                     }
                 }
-            }
+                }
                 }
             }
 
@@ -2034,6 +2110,14 @@
     margin: 0 auto;
     padding: 80px 0 0;
 
+    .sub-title{
+        margin-bottom: 0px;
+        padding: 0px 36px;
+        h2{
+            color: $primary;
+            text-transform: inherit;
+        }
+    }
     .form-wrapper{
         position: relative;
         padding: 46px 36px;
@@ -2061,12 +2145,6 @@
             }
         }
 
-        .sub-title{
-            margin-bottom: 40px;
-            h2{
-                color: $primary;
-                text-transform: inherit;
-            }
-        }
+
     }
 }
